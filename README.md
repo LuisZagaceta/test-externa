@@ -10,7 +10,8 @@
 <ul>
     <li>Clonar el proyecto como HTTPS: git clone https://github.com/LuisZagaceta/test-externa.git luiszagaceta/</li>
     <li>Ingresar a la carpeta: > cd luiszagaceta</li>
-    <li>Instalar las dependencias de composer: composer install --no-dev --optimize-autoloader</li>
+    <li>Instalar las dependencias de composer: composer install</li>
+    <li>Cambiar de nombre el archivo: .env.example -> .env</li>
     <li>
         Editar las variables del archivo .env:
         <ol>
@@ -23,5 +24,12 @@
         </ol>
     </li>
     <li>Ejecutar el migrate: php artisan migrate --force</li>
-    <li>Por ultimo ejecutar el optimize: php artisan optimize</li>
+    <li>Ejecutar el optimize: php artisan optimize:clear</li>
+    <li>Por ultimo, cree un usuario para el inicio de sesion:
+        <ol>
+            <li>php artisan tinker</li>
+            <li>User::factory()->create(['email' => '<correo@evaluador>']);</li>
+            <li>Para iniciar sesion use el correo que registro con la contraseña: password</li>
+        </ol>
+    </li>
 </ul>
