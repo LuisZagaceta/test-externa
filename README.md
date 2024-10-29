@@ -12,7 +12,7 @@
     <li>Ingresar a la carpeta: > cd luiszagaceta</li>
     <li>Instalar las dependencias de composer: composer install --no-dev --optimize-autoloader</li>
     <li>
-        Editar el archivo .env:
+        Editar las variables del archivo .env:
         <ol>
             <li>APP_URL=http://[host_instalacion]/luiszagaceta/public</li>
             <li>DB_HOST=[ip_host_bd]</li>
@@ -22,4 +22,6 @@
             <li>DB_PASSWORD=[password_basedatos]</li>
         </ol>
     </li>
+    <li>Ejecutar el migrate: php artisan migrate --force</li>
+    <li>Por ultimo ejecutar el optimize: php artisan optimize</li>
 </ul>
