@@ -28,7 +28,7 @@
     <li>Por ultimo, cree un usuario para el inicio de sesion:
         <ol>
             <li>php artisan tinker</li>
-            <li>User::factory()->create(['email' => '<correo@evaluador>']);</li>
+            <li>User::factory()->create(['email' => '[correo@evaluador]']);</li>
             <li>Para iniciar sesion use el correo que registro con la contraseña: password</li>
         </ol>
     </li>
